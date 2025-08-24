@@ -207,6 +207,56 @@ bun start:http
 bun dev:http
 ```
 
+## Gemini API Key Setup
+
+To use Gemini AI features in this project, you need to set your Gemini API key as an environment variable in your shell configuration. Follow these steps:
+
+### 1. **Check if you have a `.bashrc` file**
+
+Open your terminal and run:
+```bash
+ls -la ~/.bashrc
+```
+If you see “No such file or directory”, create it with:
+```bash
+touch ~/.bashrc
+```
+
+### 2. **Open `.bashrc` for editing**
+
+Use your preferred editor. For example, with nano:
+```bash
+nano ~/.bashrc
+```
+
+### 3. **Add your Gemini API key**
+
+At the end of the file, add this line (replace `your_real_api_key_here` with your actual key):
+```bash
+export GEMINI_API_KEY=your_real_api_key_here
+```
+
+### 4. **Reload your shell configuration**
+
+After saving and closing `.bashrc`, run:
+```bash
+source ~/.bashrc
+```
+
+### 5. **Verify the environment variable**
+
+Test that it’s set:
+```bash
+echo $GEMINI_API_KEY
+```
+You should see your API key printed in the terminal.
+
+---
+
+**Tip:**  
+If you use `zsh` instead of `bash`, do the same steps in `~/.zshrc` instead.
+
+---
 ### Connecting to the Server
 
 Connect to this MCP server using any MCP-compatible client. For testing and debugging, you can use the [MCP Inspector](https://github.com/modelcontextprotocol/inspector).
