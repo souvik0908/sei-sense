@@ -499,4 +499,4 @@ To modify or extend the server:
 ## 📄 License
 
 This project is licensed under the terms of the [MIT License](./LICENSE).
-# Sei-mcp-server2
+
